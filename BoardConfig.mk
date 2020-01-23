@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from Xiaomi sdm710-common
+# Inherit from Realme sdm710-common
 include device/realme/sdm710-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/realme/RMX1901

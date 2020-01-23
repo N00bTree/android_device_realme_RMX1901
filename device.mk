@@ -20,8 +20,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -44,7 +43,7 @@ PRODUCT_PACKAGES += \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/aosp/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Media
 PRODUCT_COPY_FILES += \
